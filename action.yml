@@ -1,0 +1,21 @@
+name: echo-inputs-json
+author: Kuniwak
+description: an example for handling inputs as contexts
+inputs:
+  "foo":
+    description: "Foo"
+    required: true
+  "bar":
+    description: "Bar"
+    required: false
+    default: "barbarbar!"
+  "baz":
+    description: "Baz"
+    required: false
+    default: true
+runs:
+  using: docker
+  image: docker://debian:buster
+  args:
+    - echo
+    - ${{ toJSON(inputs) }}
