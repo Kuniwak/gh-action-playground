@@ -8,5 +8,4 @@ jobs:
       - uses: ./.github/actions/echo-inputs-json
         with:
           foo: "FOOFOO"
-          baz: "BAZBAZ"
 
