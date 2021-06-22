@@ -1,4 +1,5 @@
 name: Playground for echo-inputs-json
+on: push
 jobs:
   Playground:
     runs-on: ubuntu-latest
