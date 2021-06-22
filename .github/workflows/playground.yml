@@ -1,0 +1,10 @@
+name: Playground for echo-inputs-json
+jobs:
+  Playground:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./action.yml
+        with:
+          foo: "FOOFOO"
+          baz: "BAZBAZ"
+
