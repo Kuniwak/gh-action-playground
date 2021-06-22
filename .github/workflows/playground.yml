@@ -4,6 +4,7 @@ jobs:
   Playground:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: ./action.yml
         with:
           foo: "FOOFOO"
