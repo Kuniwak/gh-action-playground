@@ -1,8 +1,16 @@
 name: Playground for echo-inputs-json
 on: push
 jobs:
-  Playground:
+  playground-linux:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/echo-inputs-json
+        with:
+          foo: "FOOFOO"
+
+  playground-windows:
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/echo-inputs-json
