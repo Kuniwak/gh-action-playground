@@ -12,8 +12,6 @@ jobs:
   playground-windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./.github/actions/echo-inputs-json
-        with:
-          foo: "FOOFOO"
+      - run: printenv
+        shell: bash
 
