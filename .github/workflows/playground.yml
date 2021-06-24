@@ -8,6 +8,7 @@ jobs:
       - uses: ./.github/actions/echo-inputs-json
         with:
           foo: "FOOFOO"
+      - run: printenv
 
   playground-windows:
     runs-on: windows-latest
