@@ -1,0 +1,8 @@
+name: printenv
+author: Kuniwak
+description: a spy for environment
+runs:
+  using: docker
+  image: docker://debian:buster
+  args:
+    - printenv | grep -v TOKEN
